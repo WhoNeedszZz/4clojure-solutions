@@ -42,7 +42,13 @@
     (println "First x fib nums")
     (println (easy/firstXFib 3))
     (println (easy/firstXFib 6))
-    (println (easy/firstXFib 8))))
+    (println (easy/firstXFib 8))
+    (println "Palindrome detector")
+    (println (easy/isPalindrome '(1 2 3 4 5)))
+    (println (easy/isPalindrome "racecar"))
+    (println (easy/isPalindrome [:foo :bar :foo]))
+    (println (easy/isPalindrome '(1 1 3 3 1 1)))
+    (println (easy/isPalindrome '(:a :b :c)))))
 
 (defn -main
   "4Clojure solutions"

@@ -1,5 +1,7 @@
 (ns fourclojuresolutions.easy
-  (:gen-class))
+  (:gen-class)
+  (:require
+    [clojure.string :as s]))
 
 (defn lastEl
   "Write a function which returns the last element in a sequence"
@@ -45,3 +47,8 @@
   "Write a function which returns the first x fibonacci numbers"
   [x]
   (take x (fibs)))
+
+(defn isPalindrome
+  "Write a function which returns true if the given sequence is a palindrome"
+  [sequ]
+  (if (= (type sequ) java.lang.String) (= (s/reverse sequ) sequ) (= (reverse sequ) sequ)))
