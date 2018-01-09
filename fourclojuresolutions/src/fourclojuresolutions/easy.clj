@@ -15,3 +15,8 @@
   "Write a function which returns the Nth element from a sequence"
   ([sequ n] (if (= n 0) (nthEl sequ) (nthEl (rest sequ) (- n 1))))
   ([sequ] (first sequ)))
+
+(defn numEl
+  "Write a function which returns the total number of elements in a sequence"
+  ([sequ size] (if (= (rest sequ) '()) size (numEl (rest sequ) (+ size 1))))
+  ([sequ] (numEl sequ 1)))
