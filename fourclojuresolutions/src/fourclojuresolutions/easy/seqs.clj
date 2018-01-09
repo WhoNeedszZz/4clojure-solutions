@@ -46,7 +46,11 @@
 (defn firstXFib
   "Write a function which returns the first x fibonacci numbers"
   [x]
-  (take x (fibs)))
+  (cond
+    (zero? x) '()
+    (= x 1) '(1)
+    (= x 2) '(1 1)
+    :else (take x (fibs))))
 
 (defn isPalindrome
   "Write a function which returns true if the given sequence is a palindrome"
