@@ -1,4 +1,4 @@
-(ns fourclojuresolutions.easy
+(ns fourclojuresolutions.easy.seqs
   (:gen-class)
   (:require
     [clojure.string :as s]))
