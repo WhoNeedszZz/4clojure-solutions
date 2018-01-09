@@ -30,3 +30,8 @@
   "Write a function which returns the sum of a sequence of numbers"
   [sequ]
   (reduce + sequ))
+
+(defn oddSeq
+  "Write a function which returns only the odd numbers from a sequence"
+  [sequ]
+  (filter #(odd? %) sequ))
