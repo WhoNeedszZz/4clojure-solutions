@@ -20,3 +20,8 @@
   "Write a function which returns the total number of elements in a sequence"
   ([sequ size] (if (= (rest sequ) '()) size (numEl (rest sequ) (+ size 1))))
   ([sequ] (numEl sequ 1)))
+
+(defn revSeq
+  "Write a function which reverses a sequence"
+  ([sequ rev] (if (= (count sequ) 0) rev (revSeq (rest sequ) (conj rev (first sequ)))))
+  ([sequ] (revSeq sequ '())))

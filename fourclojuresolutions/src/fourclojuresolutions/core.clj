@@ -23,7 +23,11 @@
     (println (easy/numEl "Hello World"))
     (println (easy/numEl [[1 2] [3 4] [5 6]]))
     (println (easy/numEl '(13)))
-    (println (easy/numEl '(:a :b :c)))))
+    (println (easy/numEl '(:a :b :c)))
+    (println "Reverse a sequence")
+    (println (easy/revSeq [1 2 3 4 5]))
+    (println (easy/revSeq (sorted-set 5 7 2 7)))
+    (println (easy/revSeq [[1 2] [3 4] [5 6]]))))
 
 (defn -main
   "4Clojure solutions"
