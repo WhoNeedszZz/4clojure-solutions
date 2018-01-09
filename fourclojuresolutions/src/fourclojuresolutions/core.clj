@@ -38,7 +38,11 @@
     (println (easy/oddSeq #{1 2 3 4 5}))
     (println (easy/oddSeq [4 2 1 6]))
     (println (easy/oddSeq [2 2 4 6]))
-    (println (easy/oddSeq [1 1 1 3]))))
+    (println (easy/oddSeq [1 1 1 3]))
+    (println "First x fib nums")
+    (println (easy/firstXFib 3))
+    (println (easy/firstXFib 6))
+    (println (easy/firstXFib 8))))
 
 (defn -main
   "4Clojure solutions"

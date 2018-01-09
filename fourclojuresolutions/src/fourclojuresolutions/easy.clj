@@ -35,3 +35,13 @@
   "Write a function which returns only the odd numbers from a sequence"
   [sequ]
   (filter #(odd? %) sequ))
+
+(defn fibs
+  "Define a lazy-seq of fibonacci numbers"
+  ([] (fibs 1 1))
+  ([a b] (lazy-seq (cons a (fibs b (+ a b))))))
+
+(defn firstXFib
+  "Write a function which returns the first x fibonacci numbers"
+  [x]
+  (take x (fibs)))
