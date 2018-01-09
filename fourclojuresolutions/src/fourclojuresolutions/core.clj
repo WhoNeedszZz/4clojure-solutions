@@ -27,7 +27,13 @@
     (println "Reverse a sequence")
     (println (easy/revSeq [1 2 3 4 5]))
     (println (easy/revSeq (sorted-set 5 7 2 7)))
-    (println (easy/revSeq [[1 2] [3 4] [5 6]]))))
+    (println (easy/revSeq [[1 2] [3 4] [5 6]]))
+    (println "Sum of sequence of numbers")
+    (println (easy/sumSeq [1 2 3]))
+    (println (easy/sumSeq (list 0 -2 5 5)))
+    (println (easy/sumSeq #{4 2 1}))
+    (println (easy/sumSeq '(0 0 -1)))
+    (println (easy/sumSeq '(1 10 3)))))
 
 (defn -main
   "4Clojure solutions"

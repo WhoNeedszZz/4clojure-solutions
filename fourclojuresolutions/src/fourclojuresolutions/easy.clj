@@ -25,3 +25,8 @@
   "Write a function which reverses a sequence"
   ([sequ rev] (if (= (count sequ) 0) rev (revSeq (rest sequ) (conj rev (first sequ)))))
   ([sequ] (revSeq sequ '())))
+
+(defn sumSeq
+  "Write a function which returns the sum of a sequence of numbers"
+  [sequ]
+  (reduce + sequ))
