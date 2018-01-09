@@ -1,7 +1,8 @@
 (ns fourclojuresolutions.core
   (:gen-class)
   (:require
-    [fourclojuresolutions.easy.seqs :as easy-seqs]))
+    [fourclojuresolutions.easy.seqs :as easy-seqs]
+    [fourclojuresolutions.easy.core-functions :as easy-core-f]))
 
 (defn easy-solutions []
   (do
@@ -50,10 +51,23 @@
     (println (easy-seqs/isPalindrome '(1 1 3 3 1 1)))
     (println (easy-seqs/isPalindrome '(:a :b :c)))))
 
+(defn easy-core-funcs
+  "Easy core functions"
+  []
+  (do
+    (println "Core functions")
+    (println)
+    (println "Max value")
+    (println (easy-core-f/maxValue 1 8 3 4))
+    (println (easy-core-f/maxValue 30 20))
+    (println (easy-core-f/maxValue 45 67 11))))
+
 (defn -main
   "4Clojure solutions"
   [& args]
   (do
     (println "Easy solutions:")
     (println)
-    (easy-solutions)))
+    (easy-solutions)
+    (println)
+    (easy-core-funcs)))
